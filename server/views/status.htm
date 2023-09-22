@@ -1,0 +1,14 @@
+// 获取订单状态文本
+function getOrderStatusText(status) {
+    switch (status) {
+        case "0": return "待排单";
+        case "1": return "工程师检测";
+        case "2": return "情况告知";
+        case "3": return "开始维修";
+        case "4": return "维修完毕";
+        case "5": return "客户验收";
+        case "6": return "已完成"; // 已完成状态下的订单不显示完成按钮
+        case "7": return "已取消"; 
+        default: return "";
+    }
+}
